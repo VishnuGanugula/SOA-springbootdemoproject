@@ -75,4 +75,12 @@ public class PatientServiceImpl implements PatientService
 		return repo.findByGender(gender);
 	}
 
+	
+
+	@Override
+	public long displayPatientCount() 
+	{
+		return repo.count();
+	}
+
 }

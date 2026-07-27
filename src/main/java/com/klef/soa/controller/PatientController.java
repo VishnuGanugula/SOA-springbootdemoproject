@@ -96,4 +96,13 @@ public class PatientController
 		List<Patient> patients = service.displayPatientsByGender(gender);
 		return ResponseEntity.status(200).body(patients);
 	}
+	
+	@GetMapping("/count")
+	public ResponseEntity<String> displaypatientcount() 
+	{
+		Long count = service.displayPatientCount();
+		String msg = "Total Patients = " + count;
+		return ResponseEntity.ok(msg);
+		
+	}
 }
