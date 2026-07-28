@@ -6,7 +6,8 @@ public class ProductDTO
 	private String title;
 	private double price;
 	private String description;
-	private String Category;
+	private String category;
+	private String image;
 	
 	public int getId() {
 		return id;
@@ -33,10 +34,16 @@ public class ProductDTO
 		this.description = description;
 	}
 	public String getCategory() {
-		return Category;
+		return category;
 	}
 	public void setCategory(String category) {
-		Category = category;
+		this.category = category;
+	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
 	}
 	
 }
